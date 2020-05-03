@@ -1,0 +1,17 @@
+IAM: Identity Account Management allows you to manage users and their level of access to the AWS console.
+  Centraised control of your AWS account.
+  Shared Access to your AWS account
+  Granual Permissions
+  Identity Federation(including Active Diectory, Facebook, Linked... etc)
+  Multifactor Authentication
+  Provide temporary access for users/devices and services where necessary
+  Allows you to setup your own password rotation policy
+  Integrate with mny different AWS services
+  Support PCI DSS compliance
+  
+IAM:
+  Users: End users such as people(Employees of an Organization..etc)
+  Group: Collection of users
+  Policies: are made up of documents called Policy documents(json formate). They give permission to what a user/group/role s able to do.
+  Role: You can create roles and then assign them to AWS resources.
+  
