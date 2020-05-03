@@ -1,0 +1,26 @@
+Region:
+  A Region is a geographical area. Each region consist of  2(or more) Availability Zones.
+Availbility Zone:
+  An availability zone may be a data center/several data centers, but because the are close together, they are counted 
+  as 1 availability zone.
+Edge Location:
+  Edge locations are endpoints for AWS which are used for caching content typically this consists of CloudFront, 
+  Amazon Content Delivery Network(CDN). There are many more edge locations than regions.
+
+AWS Service for Certification Exam:
+  Compute
+  Storage
+  Database
+  Network & Content Devilivery
+  Security, Identity & Complince
+
+1) Amazon VPC: Virtula Private Cloud.
+2) A virtual Private Cloud(VPC) is a virtual n/w dedicated to a single AWS account.
+   It is logically isolated from other virtual n/ws in the AWS cloud, Providing cmpute resource with security and
+   rebust networking functionality.
+3) Each Region is a separate geographic area. Each region has multiple, isolated locations knows as Availability Zones.
+   A distinct loctions within a geographic area designed to provide high availability to a specific gegraphy.
+4) An Availability Zone(AZ) is a distinct location within an AWS region. Each region comprises at least two AZs.
+   Distinct loctions from within an AWS region that are engineered to be isolated from failure.
+5) The number of Edge locations is greater than the number of Availability Zones, which is greater than the number of Regions.
+6) CloudFront is cached in Edge Loction.
