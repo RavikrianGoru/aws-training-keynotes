@@ -1,10 +1,47 @@
 S3: Simple Storage Service.
+--------------------------
 Amazon S3, is easy to use, with a simple web services interface to store and retrieve any amount of data from anyware on the web.
 S3 is safe place to store your files.
 it is object-based storage. It allows to upload files of size to 0 to 5TB.
 Files are stired in buckets. S3 is universal namespace. This means unique globally.
 So, Bucket name is uinque globally.
+
 Ex: rkmca42_bck1 is the bucket name then 
   https://rkmca42_bck1.s3.amazonaws.com
   https://rkmca42_bck1.eu-west-1.amazonaws.com
 When we upload a file in bucket will get HTTP 200 Code(if success).
+
+In S3,Think of Objects as files.
+Object consistes of:
+  Key: name of the object
+  value: data/sequenc of bytes
+  version ID:
+  Metadata:Data about data
+  Subresources:
+      ACL: Access Control Lists
+      Torrent
+      
+Data Consistency in S3:
+----------------------
+1) Read after Write Consistency for PUTs of new Objects
+2) Eventual Consistency for overwrite PUTs and DELETE(can take some time to propagate).
+   Ex: We PUT one file, Update the same file, Trying to read the file. Then You may get File version 1 or file version 2.
+   If youwait for some time (seconds). will get File version 2.
+
+Availability (4 * 9's)  & Durability (11 * 9's):
+-----------------------------------------------
+S3 has the following guarantees from Amazon.
+  * Availabilty 99.99% for S3 platform.(4*9's)
+  * Amazon gaurantee 99.9% availability
+  * Durability 99.999999999% for S3 platform(11 * 9s)
+
+S3 features:
+------------
+ 1) Tiered Storge Availability: 
+ 2) Life cycle management
+ 3) Versioning
+ 4) Encrypt
+ 5) MFA for Delete operation
+ 6) Secure data using ACls and Bucket policies
+ 
+ 
