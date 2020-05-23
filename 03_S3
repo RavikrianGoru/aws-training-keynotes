@@ -43,5 +43,37 @@ S3 features:
  4) Encrypt
  5) MFA for Delete operation
  6) Secure data using ACls and Bucket policies
+
+S3 Storage classes:
+==================
+
+ 1) S3-Standard:
+ ---------------
+ * S3 99.99% availbility
+ * S3 99.999 999 999% Durability
+ * Stores redundently across multiple decives in multiple facilities, and designed to sustain the loss of 2 fecilities concurrently.
+
+ 2) S3-IA(Infrequently Accessed): 
+ -------------------------------
+ * S3-IA: Is for infrequently Accessed less frequently, but required rapid access when needed. Lower fee than S3, but you are charged retrieval fee.
+
+ 3) S3 One Zone-IA:
+ ------------------
+ For where you want a lower-cost option for infrequently accessed data, but do not require the multiple Availability Zones data resilience.
+
+ 4) S3 Intelligent Tiering:
+ -------------------------
+ Designed to optimize costs by automatically moving data to the most cost-effective accress tier, without performance impact or operational overhead.
+ It uses ML internally.
+ 
+ 5) S3 Glacier:
+ --------------
+ S3 Glacier is a secure, durable, and low-cost storage class for data archiving. You can reliably store any amount of data
+ at costs that are compititive with or cheaper than on-premises solutions. 
+ Retrieval times configurable from minutes to hours.
+ 
+ 6) S3 Glacier Deep Archive:
+ --------------------------
+ S3 Glacier Deep archive is Amazon S3's lowest-cost storage class where a retrieval time of 12 hours is acceptable.
  
  
