@@ -1,0 +1,10 @@
+S3: Simple Storage Service.
+Amazon S3, is easy to use, with a simple web services interface to store and retrieve any amount of data from anyware on the web.
+S3 is safe place to store your files.
+it is object-based storage. It allows to upload files of size to 0 to 5TB.
+Files are stired in buckets. S3 is universal namespace. This means unique globally.
+So, Bucket name is uinque globally.
+Ex: rkmca42_bck1 is the bucket name then 
+  https://rkmca42_bck1.s3.amazonaws.com
+  https://rkmca42_bck1.eu-west-1.amazonaws.com
+When we upload a file in bucket will get HTTP 200 Code(if success).
