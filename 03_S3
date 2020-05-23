@@ -60,6 +60,8 @@ S3 Storage classes:
  3) S3 One Zone-IA:
  ------------------
  For where you want a lower-cost option for infrequently accessed data, but do not require the multiple Availability Zones data resilience.
+ 
+ * Prior to S3 One Zone IA, we had a storage class called S3 RRS, S3 Reduce Redundency storage.
 
  4) S3 Intelligent Tiering:
  -------------------------
@@ -94,5 +96,8 @@ S3 Storage classes:
   * Not suitable to install an OS/DB on.
   * When you successful upload will generate a HTTP 200 status code.
   * You can turn on MFA Delete operation.
-  * 
+  
+  * Prior to S3 One Zone IA, we had a storage class called S3 RRS, S3 Reduce Redundency storage.
+ 
+ 
  
