@@ -22,3 +22,8 @@ The number of Edge Locations is greater than the number of Availability Zones, w
 7) In which of the following is CloudFront content cached?
 CloudFront content is cached in Edge Locations.
 --------------------------
+
+1) When you upload a file in S3 bucket what code will you receive if successful upload.
+HTTP 200 Code.
+
+2) 
