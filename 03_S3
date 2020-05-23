@@ -76,4 +76,23 @@ S3 Storage classes:
  --------------------------
  S3 Glacier Deep archive is Amazon S3's lowest-cost storage class where a retrieval time of 12 hours is acceptable.
  
+ Refer: S3_Comparison_table
+ 
+
+ S3 Transfer Acceleration:
+     It enables fast and secure transfers of files over long distance between your end users and an S3 bucket.
+     It takes advantage of CloudFront's globally distributed across edge locations.
+     As data arrives at an edge location , data is routed to Amazon S3 over an optimized network path.
+ 
+ Exam Tips:
+  * S3 is object based. i.e allows you upload files.
+  * Files can be 0 Bytes to 5 TB
+  * There is unlimited storage.
+  * Files are stored in buckets(like folder).
+  * S3 is universal namespace. Names must be unique globally.
+  * when you create a bucket it creates DNS/web address like https://rk_mca_records.s3.amazonaws.com or https://rk_mca_records.eu-west-1.amazonaws.com
+  * Not suitable to install an OS/DB on.
+  * When you successful upload will generate a HTTP 200 status code.
+  * You can turn on MFA Delete operation.
+  * 
  
