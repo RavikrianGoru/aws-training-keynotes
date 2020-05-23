@@ -12,7 +12,7 @@ AWS Service for Certification Exam:
   Storage
   Database
   Network & Content Devilivery
-  Security, Identity & Complince
+  Security, Identity & Complince.
 
 1) Amazon VPC: Virtula Private Cloud.
 2) A virtual Private Cloud(VPC) is a virtual n/w dedicated to a single AWS account.
