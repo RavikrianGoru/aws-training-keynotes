@@ -1,8 +1,8 @@
-IAM: Identity Account Management allows you to manage users and their level of access to the AWS console.
+IAM: Identity Access Management allows you to manage users and their level of access to the AWS console.
   Centraised control of your AWS account.
   Shared Access to your AWS account
   Granual Permissions
-  Identity Federation(including Active Diectory, Facebook, Linked... etc)
+  Identity Federation(including Active Diectory(PC account), Facebook, Linked... etc)
   Multifactor Authentication
   Provide temporary access for users/devices and services where necessary
   Allows you to setup your own password rotation policy
@@ -12,6 +12,67 @@ IAM: Identity Account Management allows you to manage users and their level of a
 IAM:
   Users: End users such as people(Employees of an Organization..etc)
   Group: Collection of users
-  Policies: are made up of documents called Policy documents(json formate). They give permission to what a user/group/role s able to do.
+  Policies: are made up of documents called Policy documents(json formate). They give permission to what a user/group/role is able to do.
   Role: You can create roles and then assign them to AWS resources.
+ 
+ LAB-1: IAM
+ -----
+ -----
+ * Note: Steps may differe as AWS keep on chnaging UI.
+ 
+ Services-> IAM
+ IAM sign-in link: we can customize
+ https://ravikirangoru.signin.aws.amazon.com/console
+ 
+ Root account: is you login account with mail id. We can do enything with root account.
+      Turn on MFA:Multi-Factor Authentication for root account.
+ 1) Activate MAF on your root account -> Manage MFA-->Multi-factor authentication(MFA)-->Activate MFA->Virtual MFA device
+    Go to playstore then download "Googel Authenicator app"
+    * Take Pic of ScanCode if you lost Device or uninstall App this can be useful
+    Enter Two Consecutive MFA codes--> Assign MFA-->Close --Bashboard
+    * Observe the resion at top right corner: When we are doing any changes in user/IAM level:the resion will be Global".
+ 2) Create individual IAM users-->Manage Users-->Add user--> user name:rk_mca42_dev1
+    Tick Access Type: Programmatic & AWS management console access both.
+    --> Next Permission --> Add user to Group --> Create Group--> Group Name:Developers--> Tick AdministratorAccess
+    --> Create Group-->Next Tags-->Give some Tag name--> Next:Review --> Create User--Download Credentils.csv.--->Close
+    --> Dashboard--- Apply password policy-->Manage pwd policy-->Ser pwd polity--Tick whatever required--Apply
+    Open Downloaded Credentils.csv file:
+    ------------------------------------
+    user name, Password: AWS Console acess GUI
+    Access Key, Screte key: AWS access Programically. Use access keys to make secure REST or HTTP Query protocol requests to AWS service APIs. For your protection, you should never share your secret keys with anyone.
+    Console login link: Login link.
+    
+    * We can changes users access: Users--> select user -->click on user name: Check all features.
+    * Made access key inactive & Deleted as not required as of now
+    * Observe SSH key for CodeCommit, HTTPS Git Credenila for CodeCommit Repos.
+    
+ IAM Roles: IAM roles are a secure way to grant permissions to entities that you trust.   
+    IAM user in another account
+    Application code running on an EC2 instance that needs to perform actions on AWS resources
+    An AWS service that needs to act on resources in your account to provide its features
+    Users from a corporate directory who use identity federation with SAML... etc
+ 3) Create Role:
+    IAM --> Dashboard--> Roles--> Create Role--> AWS Service--> EC2 --> Next:Permissions--> search & Select S3FullAccess
+    --> Next:Tags-->Give some tag name--> Next:Review--> Role Name: Dev_EC2_FullAccess_S3 --> Create Role.
+    
+    
+LAB-2: Billing Alarm
+-----
+-----
+* Some of the lab need to use some services which are not come under free-tire.So, Better to set billing Alram.
+  How to get automatic mail notification when your usages exceeds to 10 or above USD?
+   
+  AWS Cnsole--> Region North Verginia--> CloudWatch Service  ---> click on "Billing" under Alarms-->
+  --> 2nd Create Alarm--> Keep all default and ">10USD"-->Next---> Create Topic ---> Topic Name: Billing_RkMca42_GT10USD,
+  Valid mail ID(s),-->Create Topic-->Next--> Alarm Name, some Description--> Next--> Create Alarm
+  Then open you emails and subscribe.
+  
+  
+  
+    
+    
+ 
+ 
+ 
+  
   
