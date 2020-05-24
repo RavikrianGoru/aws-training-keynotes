@@ -61,6 +61,9 @@ S3 Storage classes:
  ------------------
  For where you want a lower-cost option for infrequently accessed data, but do not require the multiple Availability Zones data resilience.
  
+ 3a) S3 Reduced Redundent:
+ ------------------------
+ * Not recommended: Frequently accessed, non-critical data & >=3 Availability Zones
  * Prior to S3 One Zone IA, we had a storage class called S3 RRS, S3 Reduce Redundency storage.
 
  4) S3 Intelligent Tiering:
