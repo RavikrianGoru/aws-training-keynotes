@@ -12,12 +12,19 @@ When you try to open the files: Access Denied
   https://mca42-ubunto-b1.s3.ap-south-1.amazonaws.com/imgs/Screenshot+from+2020-05-24+11-55-47.png
 
 How can you make the above objects public?
-  Go to bucket's imgs folger--- select object-->Actions---> Make public is disables as bucket is not public.
+  Go to bucket's imgs folder--- select object-->Actions---> Make public is disables as bucket is not public.
   So, go inside bucket --> Check all properties, Permissions, Management, Access point.
   -->Permissions--> Block Public access-->Edit--> Uncheck Block all public access-->Save-->Confirm.
   We need to make objects to public to access objects.
   Select imgs folde -->Action -->Make public. Now you can access all the object from imgs folder
------
+
+How do you enable Encryption for object on bucket?
+If someone able to break Amazon Datacenter and got your file: If it is encrypted then he can unable to read.
+Go to S3 --> You bucket--> Select object-->Properties--> Default Encryption-->Select AES-256 --> save
+You can verify the Default Encryption :AES-256
+
+
+
 
   
 
