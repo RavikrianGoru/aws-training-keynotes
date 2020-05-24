@@ -58,13 +58,24 @@ Click on Show versioning.
 Select file and delete.
 Show Versining: You can all the files versions.
 
-Exam: Tips
+Exam tips
 * Stores all the versions of an object(Writes and Delete marker too)
 * Great backup tool
 * Once enable versioning can not be disabled. only suspended.
 * After suspended, It can have older versions but newly upload multiple version of file will have one version "null".
 * Integreated with lifecycle rules.
 * Versioning with MFA DELETE, provies additional layer of security.
+
+
+LifeCycle rules:
+---------------
+It helpsto automate your objects in transition.
+We can use lifecycle rules on your bucket object in transit.
+Lifecycle rules can be used to transit to differnt storage class after some days, or delete objects after some days...etc.
+
+Select an object in bucket ---> Management-->Add lifecycle rule--> Give some name-- Next--> Expiration for current and previous 
+version of object to 15 days-->Save.
+
 
 
 
