@@ -1,2 +1,23 @@
 LAB-1: Create bucket and and upload files in it. access it.
 -----
+  * The following steps can be cahnged as Amazon keeps on changing GUI.
+  * S3 is Global view. Even you select specific region will go to global.
+  * Object will be stored in specified region but global view.(means unique names)
+
+Service --> S3 under Storage.-->Create bucket--> Give bucket name and select region nearer one(mumbai asia).---> Create bucket
+Click on bucket name --> Create Folder(imgs)--> Upload two files images in created folder with default settings.
+
+When you try to open the files: Access Denied
+  https://mca42-ubunto-b1.s3.ap-south-1.amazonaws.com/imgs/Screenshot+from+2020-05-24+11-50-55.png
+  https://mca42-ubunto-b1.s3.ap-south-1.amazonaws.com/imgs/Screenshot+from+2020-05-24+11-55-47.png
+
+How can you make the above objects public?
+  Go to bucket's imgs folger--- select object-->Actions---> Make public is disables as bucket is not public.
+  So, go inside bucket --> Check all properties, Permissions, Management, Access point.
+  -->Permissions--> Block Public access-->Edit--> Uncheck Block all public access-->Save-->Confirm.
+  We need to make objects to public to access objects.
+  Select imgs folde -->Action -->Make public. Now you can access all the object from imgs folder
+-----
+
+  
+
