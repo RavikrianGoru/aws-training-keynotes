@@ -1,0 +1,50 @@
+S3 Pricing Tiers:
+----------------
+
+What makes up the cost of S3?
+  Storage
+  Requests & Data retrievals
+  Data Transfer
+  Management & Replication
+
+Storage: Ref: https://www.amazonaws.cn/en/s3/pricing/
+-------
+  S3 Standard = S3 Intelligent-Tiering ,Frequent Access Tier 
+  >
+  S3 Intelligent-Tiering, Infrequent Access Tier = S3 Standard - Infrequent Access
+  >
+  S3 One Zone-Infrequent Access
+  >
+  Amazon S3 Glacier
+  >
+  Amazon S3 Glacier Deep Archive
+  
+* Good to use S3 Intelligent-Tiering(FA) than S3 Standard
+* Good to use S3 Intelligent-Tiering(IA) than S3 STandard IA
+
+S3 Security & Encryption:
+-------------------------
+All the buckets are by default private access
+We can set up ACL and Bucket policies
+S3 Buckets can be configured to create access logs and this can be sent to another bucket/ another bucket in another account.
+
+
+1) Encryption In Transit is achieved by 
+   SSL/TLS
+   Ex: When you visit any https website the traffic is Encrypted In Transit(PC to SERVER)
+2) Encryption At REST(Server Side) is achieved by
+   S3 Managed Keys - SSE-S3 : Amazon manages the Keys
+   AWS key Management Service, Managed Keys - SSE-KMS : Amazon and You/Customer manages the keys
+   Server Side Encryption with Customer Provided Keys - SSE-C : Coustomer manages keys
+3) Client Side Encryption : Customer encrypt the object and then uploads in S3 Bucket.
+
+
+
+   
+   
+  
+
+
+
+
+
