@@ -98,6 +98,8 @@ S3 Storage classes:
   * You can turn on MFA Delete operation.
   
   * Prior to S3 One Zone IA, we had a storage class called S3 RRS, S3 Reduce Redundency storage.
+  * Control access to bucket using either a Bucket ACL or using Bucket Policies.
+  
  
  
  
