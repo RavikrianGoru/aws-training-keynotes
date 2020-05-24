@@ -39,6 +39,36 @@ S3 Buckets can be configured to create access logs and this can be sent to anoth
 3) Client Side Encryption : Customer encrypt the object and then uploads in S3 Bucket.
 
 
+S3 Versioning:
+-------------
+We can store all the versions of objects(Wites, Delete operations too)
+Greate backup tool
+We can not disable versioning once enable only suspend option.
+Integrates with lifecycle rules
+Versioning's MFA Delete capability(Additional layer of security).
+
+Create a buckete and store a file with version enabled ?
+Services-->S3-->Create bucket--> "mca42-ubunto-b2-versioned" --> Create bucket.
+Go to above bucket --> Versioning--Enable Versinioning--Save
+Make the bucket public.
+Permission-->Block public access-->Edit--->Uncheck--->Save--Confirm.
+Upload a file to this bucket and make public.
+Upload the sample with edited content.
+Click on Show versioning.
+Select file and delete.
+Show Versining: You can all the files versions.
+
+Exam: Tips
+* Stores all the versions of an object(Writes and Delete marker too)
+* Great backup tool
+* Once enable versioning can not be disabled. only suspended.
+* After suspended, It can have older versions but newly upload multiple version of file will have one version "null".
+* Integreated with lifecycle rules.
+* Versioning with MFA DELETE, provies additional layer of security.
+
+
+
+
 
    
    
