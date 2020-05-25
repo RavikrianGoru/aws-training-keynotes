@@ -77,7 +77,30 @@ Select an object in bucket ---> Management-->Add lifecycle rule--> Give some nam
 version of object to 15 days-->Save.
 
 
+AWS Organization & Consolidated billing:
+---------------------------------------
+It is an account management service it enables you to consolidate multiple AWS accounts into an organizaion
+that you create and manage centrally.
+ * Paying account is independent. Can not access the resources of other account.
+ * All linked accounts are independent.(TEST/DEV/PRD/FIN....)
 
+Advantages of consolidate billing:
+  + One bill per AWS account
+  + Easy to track charges & allocate costs
+  + Volume pricing discount
+AWS Console--> Login with one account-->Services -->Organizations(My Organizations)-->Crete Organization-->Add account
+--> Invite/Create Account--> Give other account mail ID:rkg--> ...etc
+
+Exam Tips:
+  Always enable MFA on root account & strong and complex pwd on root account
+  Paying account should be used for billing, Dont deploy any resources.
+  Enable/Disable AWS services using SCP(Service Control Policies) on ORganization Units/ Individual Accounts.
+ 
+ Sharing S3 buckets across Accounts:
+ -----------------------------------
+ 
+  
+ 
 
 
 
